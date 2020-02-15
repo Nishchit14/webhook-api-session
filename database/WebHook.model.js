@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const WebHook = mongoose.Schema({
     name: String,
-    payload: Object
+    payload: Object,
+    addedBy: String
 }, {
     timestamps: true
 });
